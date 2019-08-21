@@ -43,6 +43,9 @@ See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
 
 ## TODO
 
+## RESOURCES
+
+* [Colab notebooks for Swift for TensorFlow](https://github.com/zaidalyafeai/Swift4TF)
 ## AUTHOR
 
 [@huan](https://github.com/huan) [Huan LI](https://linkedin.com/in/zixia) \<zixia@zixia.net\>
@@ -56,3 +59,4 @@ See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
 - Code & Docs © 2018 - now Huan LI \<zixia@zixia.net\>
 - Code released under the Apache-2.0 License
 - Docs released under Creative Commons
+
