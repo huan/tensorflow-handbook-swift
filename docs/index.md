@@ -8,9 +8,9 @@
 
 Google 推出的 Swift for TensorFlow （简称S4TF）是专门针对 Tensorflow 优化过的 Swift 版本。
 
-为了能够在程序语言级支持 Tensorflow 所需的所有功能特性，S4TF 做为了 Swift 语言本身的一个分支，为 Swift 语言添加了机器学习所需要的所有功能扩展。它不仅仅是一个用 Swift 写成的 TensorFlow API 封装，Google 还为 Swift 增加了编译器和语言增强功能，提供了一种新的编程模型，结合了图的性能、Eager Execution的灵活性和表达能力。
-
 Swift 语言是 Chris Lattner 在苹果公司工作时创建的。 现在 Chris Lattner 在 Google Brain 工作，专门从事深度学习的研究，并为 Swift 重写了编译器，为 Tensorflow 做定制优化，
+
+为了能够在程序语言级支持 Tensorflow 所需的所有功能特性，S4TF 做为了 Swift 语言本身的一个分支，为 Swift 语言添加了机器学习所需要的所有功能扩展。它不仅仅是一个用 Swift 写成的 TensorFlow API 封装，Google 还为 Swift 增加了编译器和语言增强功能，提供了一种新的编程模型，结合了图的性能、Eager Execution的灵活性和表达能力。
 
 本章我们将向大家简要介绍 Swift for Tensorflow 的使用。你可以参考最新的 [Swift for TensorFlow 文档](https://www.tensorflow.org/swift).
 
@@ -225,7 +225,7 @@ for epoch in 1...epochCount {
     print("""
           [Epoch \(epoch)] \
           Training Loss: \(trainStats.totalLoss), \
-          Training Accuracy: \(trainStats.correctGuessCount)/\(trainStats.totalGuessCount) \ 
+          Training Accuracy: \(trainStats.correctGuessCount)/\(trainStats.totalGuessCount) \
           (\(trainAccuracy)), \
           Test Loss: \(testStats.totalLoss), \
           Test Accuracy: \(testStats.correctGuessCount)/\(testStats.totalGuessCount) \
