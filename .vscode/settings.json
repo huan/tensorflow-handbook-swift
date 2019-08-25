@@ -1,0 +1,8 @@
+// .vscode/settings.json example for TensorFlow
+{
+  "python.pythonPath": "python3",
+  "sde.swiftBuildingParams": ["build", "-Xlinker", "-ltensorflow"],
+  "sde.languageServerMode": "sourcekite",
+  "sourcekit-lsp.toolchainPath": "/Library/Developer/Toolchains/swift-latest",
+  "swift.path.swift_driver_bin": "/Library/Developer/Toolchains/swift-latest/usr/bin/swift"
+}
