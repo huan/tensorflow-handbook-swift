@@ -1,7 +1,5 @@
 # Tensorflow Handbook for Swift
 
-Swift for Tensorflow
-
 ![Swift for Tensorflow](docs/images/swift-tensorflow.png)
 
 This repository is a Chapter for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
