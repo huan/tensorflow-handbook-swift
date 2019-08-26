@@ -1,5 +1,7 @@
 # Swift for TensorFlow (Huan）
 
+![Swift for Tensorflow](images/swift-tensorflow.png)
+
 > "Swift for Tensorflow is an attempt to change the default tools used by the entire machine learning and data science ecosystem."
 >
 > -- Jameson Toole,  Co-founder & CTO of Fritz.ai
