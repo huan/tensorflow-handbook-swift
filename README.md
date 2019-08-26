@@ -46,7 +46,7 @@ See:
 * [Colab notebooks for Swift for TensorFlow](https://github.com/zaidalyafeai/Swift4TF)
 ## AUTHOR
 
-[@huan](https://github.com/huan) [Huan (李卓桓)](https://linkedin.com/in/zixia) \<zixia@zixia.net\>
+[@Huan](https://github.com/huan) [(李卓桓)](https://linkedin.com/in/zixia) \<zixia@zixia.net\>
 
 <a href="http://stackoverflow.com/users/1123955/zixia">
   <img src="http://stackoverflow.com/users/flair/1123955.png" width="208" height="58" alt="profile for zixia at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for zixia at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
