@@ -1,6 +1,6 @@
-# SWIFT CONCIST CHITCHAT
+# Tensorflow Handbook for Swift
 
-Concist Chit Chat in Swift
+Swift for Tensorflow
 
 ![Swift for Tensorflow](docs/images/swift-tensorflow.png)
 
