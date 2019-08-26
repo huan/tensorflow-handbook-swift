@@ -1,4 +1,4 @@
-# Tensorflow Handbook for Swift
+# Tensorflow in Swift
 
 ![Swift for Tensorflow](docs/images/swift-tensorflow.png)
 
