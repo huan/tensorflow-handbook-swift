@@ -3,20 +3,15 @@
 Concist Chit Chat in Swift
 
 This repository is a Chapter for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
-Book Chapter: Swift Concise Chit Chat - <https://huan.github.io/swift-concise-chitchat/>
+Book Chapter: Swift for Tensorflow - <https://huan.github.io/tensorflow-handbook-swift/>
 
-TO BE FIXED: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/swift-concise-chitchat/blob/master/Swift_Concise_ChitChat.ipynb)
+TO BE FIXED: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/tensorflow-handbook-swift.ipynb)
 
-Book Chapter: Swift Concise ChitChat - <https://huan.github.io/concise-chit-chat/>
+Book Chapter: Swift for Tensorflow - <https://huan.github.io/tensorflow-handbook-swift/>
 
 ## USAGE
 
-```shell
-make install    # install dependencies
-make train      # train the model(dataset will be downloaded automatically)
-make board      # monitor & analyse train process
-make chat       # chat with it!
-```
+TBW
 
 ## DEVELOP
 
@@ -36,10 +31,13 @@ make chat       # chat with it!
 ## Docker
 
 ```sh
-docker run -ti -v "$(pwd)":/notebooks --rm --privileged  --userns=host --entrypoint /bin/bash swift-jupyter
+docker run -ti -v "$(pwd)":/notebooks --rm --privileged  --userns=host --entrypoint /bin/bash zixia/swift
 ```
 
-See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
+See: 
+
+1. Docker parameters - <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
+1. Docker Repo - <https://github.com/huan/docker-swift-tensorflow>
 
 ## TODO
 
