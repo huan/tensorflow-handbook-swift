@@ -2,6 +2,8 @@
 
 Concist Chit Chat in Swift
 
+![Swift for Tensorflow](docs/images/swift-tensorflow.png)
+
 This repository is a Chapter for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
 Book Chapter: Swift for Tensorflow - <https://huan.github.io/tensorflow-handbook-swift/>
 
