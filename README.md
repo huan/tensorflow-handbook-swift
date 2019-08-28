@@ -13,6 +13,10 @@ Book Chapter: Tensorflow Handbook - Swift
 
 ## USAGE
 
+### For those who had Swift installed
+
+If you had installed Swift locally, then you can run swift directly:
+
 ```shell
 $ swift run
 Downloading train-images-idx3-ubyte ...
@@ -22,20 +26,18 @@ Constructing data tensors.
 Test Accuracy: 0.9116667
 ```
 
-## DEVELOP
+### For those who had no Swift installed (Docker)
 
-## TURORIAL
+If you are using Windows, or Ubuntu 19 (Swift for Tensorflow only supports Mac & Ubuntu 18.04 at Aug 2019), then the only way which you can play with this repository is to use Docker.
 
-## Docker
-
-```sh
+```shell
 # use `nvidia-docker` if you want to use GPU
 docker run -ti --rm \
   --privileged \
   --userns=host \
   -v "$(pwd)":/notebooks \
   zixia/swift \
-  bash
+  swift run
 ```
 
 See:
@@ -57,7 +59,7 @@ See:
 - [Swift for TensorFlow (TensorFlow @ O’Reilly AI Conference, San Francisco '18)](https://www.youtube.com/watch?v=mu0j4Gd2YY8)
 - [Swift for TensorFlow: The Next-Generation Machine Learning Framework (TF Dev Summit '19)](https://www.youtube.com/watch?v=s65BigoMV_I)
 
-## AUTHOR
+## Author
 
 [Huan](https://github.com/huan) [(李卓桓)](https://linkedin.com/in/zixia) \<zixia@zixia.net\>
 
@@ -65,9 +67,8 @@ See:
   <img src="http://stackoverflow.com/users/flair/1123955.png" width="208" height="58" alt="profile for zixia at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for zixia at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
 </a>
 
-## COPYRIGHT & LICENSE
+## Copyright & License
 
-- Code & Docs © 2018 - now Huan LI \<zixia@zixia.net\>
+- Code & Docs © 2018 - now Huan (李卓桓) \<zixia@zixia.net\>
 - Code released under the Apache-2.0 License
 - Docs released under Creative Commons
-
