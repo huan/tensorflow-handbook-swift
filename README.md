@@ -33,7 +33,12 @@ TBW
 ## Docker
 
 ```sh
-docker run -ti -v "$(pwd)":/notebooks --rm --privileged  --userns=host --entrypoint /bin/bash zixia/swift
+docker run -ti --rm \
+  --privileged \
+  --userns=host \
+  -v "$(pwd)":/notebooks \
+  zixia/swift \
+  bash
 ```
 
 See: 
