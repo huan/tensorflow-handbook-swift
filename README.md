@@ -52,6 +52,7 @@ See:
 ## RESOURCES
 
 - [Colab notebooks for Swift for TensorFlow](https://github.com/zaidalyafeai/Swift4TF)
+- [Repository for reviews and evaluations of converted Swift Notebooks as part of GSoC '19 program](https://github.com/Ayush517/S4TF-Tutorials)
 - [fast.ai Embracing Swift for Deep Learning](https://www.fast.ai/2019/03/06/fastai-swift/)
 - [High Performance Numeric Programming with Swift: Explorations and Reflections](https://www.fast.ai/2019/01/10/swift-numerics/)
 - [Swift for TensorFlow Design Overview](https://github.com/tensorflow/swift/blob/master/docs/DesignOverview.md)
