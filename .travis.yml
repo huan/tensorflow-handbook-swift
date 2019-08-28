@@ -10,7 +10,7 @@ addons:
 
 install:
   - wget https://storage.googleapis.com/swift-tensorflow-artifacts/nightlies/latest/swift-tensorflow-DEVELOPMENT-ubuntu18.04.tar.gz
-  - sudo tar xzvf swift-tensorflow-*-*.tar.gz --directory=/ 
+  - tar xzvf swift-tensorflow-*-*.tar.gz
 
 script:
-  - swift test
+  - ./usr/bin/swift test
