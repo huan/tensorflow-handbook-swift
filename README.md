@@ -5,7 +5,7 @@ Concist Chit Chat in Swift
 This repository is a Chapter for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
 Book Chapter: Swift Concise Chit Chat - <https://huan.github.io/swift-concise-chitchat/>
 
-TO BE FIXED: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/swift-concise-chitchat/blob/master/Swift_Concise_ChitChat.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/swift-for-tensorflow-mnist-example.ipynb)
 
 Book Chapter: Swift Concise ChitChat - <https://huan.github.io/concise-chit-chat/>
 
