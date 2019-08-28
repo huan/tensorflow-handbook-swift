@@ -209,13 +209,13 @@ let labelBatch = Dataset(elements: trainLabels).batched(32)
 
 for (X, y) in zip(imageBatch, labelBatch) {
   // Caculate the gradient
-  let (_loss, grads) = valueWithGradient(at: model) { model -> Tensor<Float> in
+  let (_, grads) = valueWithGradient(at: model) { model -> Tensor<Float> in
     let logits = model(X)
     return softmaxCrossEntropy(logits: logits, labels: y)
   }
 
   // Update parameters by optimizer
-  optimizer.update(&model.allDifferentiableVariables, along: grads)
+  optimizer.update(&model.self, along: grads)
 }
 
 let logits = model(testImages)
