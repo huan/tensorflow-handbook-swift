@@ -1,5 +1,7 @@
 # Tensorflow in Swift
 
+[![Build Status](https://travis-ci.com/huan/tensorflow-handbook-swift.svg?branch=master)](https://travis-ci.com/huan/tensorflow-handbook-swift)
+
 ![Swift for Tensorflow](docs/images/swift-tensorflow.png)
 
 This repository is the [Swift Chapter](https://tf.wiki/zh/appendix/swift.html) for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
