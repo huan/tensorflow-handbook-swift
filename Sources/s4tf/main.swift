@@ -2,6 +2,8 @@ import TensorFlow
 import Python
 import Foundation
 
+import MNIST
+
 struct MLP: Layer {
   typealias Input = Tensor<Float>
   typealias Output = Tensor<Float>
@@ -18,7 +20,7 @@ struct MLP: Layer {
 var model = MLP()
 let optimizer = Adam(for: model)
 
-let mnist = Mnist()
+let mnist = MNIST()
 let (trainImages, trainLabels, testImages, testLabels) = mnist.splitTrainTest()
 
 let imageBatch = Dataset(elements: trainImages).batched(32)
