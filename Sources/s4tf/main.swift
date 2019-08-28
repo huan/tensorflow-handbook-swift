@@ -32,7 +32,7 @@ for (X, y) in zip(imageBatch, labelBatch) {
   }
 
   // Update parameters by optimizer
-  optimizer.update(&model.self, along: grads)    
+  optimizer.update(&model.self, along: grads)
 }
 
 let logits = model(testImages)
