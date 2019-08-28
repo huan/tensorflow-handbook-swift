@@ -26,7 +26,7 @@ final class s4tfTests: XCTestCase {
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         let output = String(data: data, encoding: .utf8)
 
-        XCTAssertEqual(output, "Hello, world!\n")
+        XCTAssertNotNil(output!.range(of:"Test Accuracy"))
     }
 
     /// Returns path to the built products directory.
