@@ -2,12 +2,14 @@
 
 ![Swift for Tensorflow](docs/images/swift-tensorflow.png)
 
-This repository is a Chapter for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
-Book Chapter: [Swift for Tensorflow](https://huan.github.io/tensorflow-handbook-swift/)
+This repository is the [Swift Chapter](https://tf.wiki/zh/appendix/swift.html) for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/swift-for-tensorflow-mnist-example.ipynb)
+MNIST Example in Book: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/swift-for-tensorflow-mnist-example.ipynb)
 
-Book Chapter: Swift for Tensorflow - <https://huan.github.io/tensorflow-handbook-swift/>
+Book Chapter: Tensorflow Handbook - Swift
+
+- Github Repository: <https://github.com/huan/tensorflow-handbook-swift>
+- Github Pages: <https://huan.github.io/tensorflow-handbook-swift/>
 
 ## USAGE
 
