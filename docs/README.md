@@ -168,7 +168,7 @@ gradient(at:0.5) { x in frac(x) }
 
 ## MNIST 数字分类
 
-本小节的源代码可以在 <https://github.com/huan/tensorflow-handbook-swift/blob/master/Sources/> 找到。其中的 `Mnist` 数据集的辅助类的源代码文件为 `s4tf/mnist.swift` ，需要读者单独加载。
+本小节的源代码可以在 <https://github.com/huan/tensorflow-handbook-swift> 找到。加载 `MNIST` 数据集使用了作者封装的 Swift Module [swift-MNIST](https://github.com/huan/swift-MNIST)。
 
 更方便的是在 Google Colab 上直接打开本例子的 Jupyter 直接运行，地址：<https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/swift-for-tensorflow-mnist-example.ipynb>（推荐）
 
@@ -178,6 +178,12 @@ gradient(at:0.5) { x in frac(x) }
 import TensorFlow
 import Python
 import Foundation
+
+/**
+ * The Swift Module for MNIST Dataset:
+ * https://github.com/huan/swift-MNIST
+ */
+import MNIST
 
 struct MLP: Layer {
   typealias Input = Tensor<Float>
@@ -195,11 +201,7 @@ struct MLP: Layer {
 var model = MLP()
 let optimizer = Adam(for: model)
 
-/**
- * The Mnist class source code is from:
- * https://github.com/huan/tensorflow-handbook-swift/blob/master/Sources/s4tf/mnist.swift
- */
-let mnist = Mnist()
+let mnist = MNIST()
 let (trainImages, trainLabels, testImages, testLabels) = mnist.splitTrainTest()
 
 let imageBatch = Dataset(elements: trainImages).batched(32)
