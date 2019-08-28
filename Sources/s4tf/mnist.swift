@@ -1,3 +1,7 @@
+import TensorFlow
+import Python
+import Foundation
+
 class Mnist {
 
   let mnistBaseURL = "https://raw.githubusercontent.com/tensorflow/swift-models/master/Datasets/MNIST/"

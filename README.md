@@ -13,22 +13,18 @@ Book Chapter: Tensorflow Handbook - Swift
 
 ## USAGE
 
-TBW
+```shell
+$ swift run
+Downloading train-images-idx3-ubyte ...
+Downloading train-labels-idx1-ubyte ...
+Reading data.
+Constructing data tensors.
+Test Accuracy: 0.9116667
+```
 
 ## DEVELOP
 
 ## TURORIAL
-
-## RESOURCES
-
-- [fast.ai Embracing Swift for Deep Learning](https://www.fast.ai/2019/03/06/fastai-swift/)
-- [High Performance Numeric Programming with Swift: Explorations and Reflections](https://www.fast.ai/2019/01/10/swift-numerics/)
-- [Swift for TensorFlow Design Overview](https://github.com/tensorflow/swift/blob/master/docs/DesignOverview.md)
-
-### Videos
-
-- [Swift for TensorFlow (TensorFlow @ O’Reilly AI Conference, San Francisco '18)](https://www.youtube.com/watch?v=mu0j4Gd2YY8)
-- [Swift for TensorFlow: The Next-Generation Machine Learning Framework (TF Dev Summit '19)](https://www.youtube.com/watch?v=s65BigoMV_I)
 
 ## Docker
 
@@ -42,7 +38,7 @@ docker run -ti --rm \
   bash
 ```
 
-See: 
+See:
 
 1. Docker parameters - <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
 1. Docker Repo - <https://github.com/huan/docker-swift-tensorflow>
@@ -51,7 +47,16 @@ See:
 
 ## RESOURCES
 
-* [Colab notebooks for Swift for TensorFlow](https://github.com/zaidalyafeai/Swift4TF)
+- [Colab notebooks for Swift for TensorFlow](https://github.com/zaidalyafeai/Swift4TF)
+- [fast.ai Embracing Swift for Deep Learning](https://www.fast.ai/2019/03/06/fastai-swift/)
+- [High Performance Numeric Programming with Swift: Explorations and Reflections](https://www.fast.ai/2019/01/10/swift-numerics/)
+- [Swift for TensorFlow Design Overview](https://github.com/tensorflow/swift/blob/master/docs/DesignOverview.md)
+
+### Videos
+
+- [Swift for TensorFlow (TensorFlow @ O’Reilly AI Conference, San Francisco '18)](https://www.youtube.com/watch?v=mu0j4Gd2YY8)
+- [Swift for TensorFlow: The Next-Generation Machine Learning Framework (TF Dev Summit '19)](https://www.youtube.com/watch?v=s65BigoMV_I)
+
 ## AUTHOR
 
 [Huan](https://github.com/huan) [(李卓桓)](https://linkedin.com/in/zixia) \<zixia@zixia.net\>
