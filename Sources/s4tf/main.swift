@@ -9,11 +9,13 @@ struct MLP: Layer {
   typealias Output = Tensor<Float>
 
   var flatten = Flatten<Float>()
-  var dense = Dense<Float>(inputSize: 784, outputSize: 10)
+  var dense = Dense<Float>(inputSize: 784, outputSize: 128, activation: relu)
+  var dropout = Dropout<Float>(probability: 0.2)
+  var output = Dense<Float>(inputSize: 128, outputSize: 10, activation: softmax)
   
   @differentiable
   public func callAsFunction(_ input: Input) -> Output {
-    return input.sequenced(through: flatten, dense)
+    return input.sequenced(through: flatten, dense, dropout, output)
   }  
 }
 
