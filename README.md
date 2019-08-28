@@ -1,22 +1,17 @@
-# SWIFT CONCIST CHITCHAT
+# Tensorflow in Swift
 
-Concist Chit Chat in Swift
+![Swift for Tensorflow](docs/images/swift-tensorflow.png)
 
 This repository is a Chapter for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
-Book Chapter: Swift Concise Chit Chat - <https://huan.github.io/swift-concise-chitchat/>
+Book Chapter: [Swift for Tensorflow](https://huan.github.io/tensorflow-handbook-swift/)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/swift-for-tensorflow-mnist-example.ipynb)
 
-Book Chapter: Swift Concise ChitChat - <https://huan.github.io/concise-chit-chat/>
+Book Chapter: Swift for Tensorflow - <https://huan.github.io/tensorflow-handbook-swift/>
 
 ## USAGE
 
-```shell
-make install    # install dependencies
-make train      # train the model(dataset will be downloaded automatically)
-make board      # monitor & analyse train process
-make chat       # chat with it!
-```
+TBW
 
 ## DEVELOP
 
@@ -36,10 +31,13 @@ make chat       # chat with it!
 ## Docker
 
 ```sh
-docker run -ti -v "$(pwd)":/notebooks --rm --privileged  --userns=host --entrypoint /bin/bash swift-jupyter
+docker run -ti -v "$(pwd)":/notebooks --rm --privileged  --userns=host --entrypoint /bin/bash zixia/swift
 ```
 
-See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
+See: 
+
+1. Docker parameters - <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
+1. Docker Repo - <https://github.com/huan/docker-swift-tensorflow>
 
 ## TODO
 
@@ -48,7 +46,7 @@ See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
 * [Colab notebooks for Swift for TensorFlow](https://github.com/zaidalyafeai/Swift4TF)
 ## AUTHOR
 
-[@huan](https://github.com/huan) [Huan LI](https://linkedin.com/in/zixia) \<zixia@zixia.net\>
+[Huan](https://github.com/huan) [(李卓桓)](https://linkedin.com/in/zixia) \<zixia@zixia.net\>
 
 <a href="http://stackoverflow.com/users/1123955/zixia">
   <img src="http://stackoverflow.com/users/flair/1123955.png" width="208" height="58" alt="profile for zixia at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for zixia at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
