@@ -43,7 +43,7 @@ docker run -ti --rm \
 See:
 
 1. Docker parameters - <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
-1. Docker Repo - <https://github.com/huan/docker-swift-tensorflow>
+1. Docker Repo of `zixia/swift` - <https://github.com/huan/docker-swift-tensorflow>
 
 ## TODO
 
