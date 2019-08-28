@@ -33,6 +33,7 @@ TBW
 ## Docker
 
 ```sh
+# use `nvidia-docker` if you want to use GPU
 docker run -ti --rm \
   --privileged \
   --userns=host \
