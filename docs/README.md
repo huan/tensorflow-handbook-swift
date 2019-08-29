@@ -168,7 +168,7 @@ gradient(at:0.5) { x in frac(x) }
 
 ## MNIST 数字分类
 
-本小节的源代码可以在 <https://github.com/huan/tensorflow-handbook-swift/src> 找到。其中的 `Mnist` 数据集的辅助类的源代码文件为 `mnist.swift` ，需要单独加载。
+本小节的源代码可以在 <https://github.com/huan/tensorflow-handbook-swift> 找到。加载 `MNIST` 数据集使用了作者封装的 Swift Module [swift-MNIST](https://github.com/huan/swift-MNIST)。
 
 更方便的是在 Google Colab 上直接打开本例子的 Jupyter 直接运行，地址：<https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/tensorflow-handbook-swift-example.ipynb>（推荐）
 
@@ -178,6 +178,12 @@ gradient(at:0.5) { x in frac(x) }
 import TensorFlow
 import Python
 import Foundation
+
+/**
+ * The Swift Module for MNIST Dataset:
+ * https://github.com/huan/swift-MNIST
+ */
+import MNIST
 
 struct MLP: Layer {
   typealias Input = Tensor<Float>
@@ -195,25 +201,21 @@ struct MLP: Layer {
 var model = MLP()
 let optimizer = Adam(for: model)
 
-/**
- * The Mnist class source code is from:
- * https://github.com/huan/tensorflow-handbook-swift/src/mnist.swift
- */
-let mnist = Mnist()
-let (trainImages, trainLabels, testImages, testLabels) = mnist.splitTrainTest()
+let mnist = MNIST()
+let ((trainImages, trainLabels), (testImages, testLabels)) = mnist.loadData()
 
 let imageBatch = Dataset(elements: trainImages).batched(32)
 let labelBatch = Dataset(elements: trainLabels).batched(32)
 
 for (X, y) in zip(imageBatch, labelBatch) {
   // Caculate the gradient
-  let (_loss, grads) = valueWithGradient(at: model) { model -> Tensor<Float> in
+  let (_, grads) = valueWithGradient(at: model) { model -> Tensor<Float> in
     let logits = model(X)
     return softmaxCrossEntropy(logits: logits, labels: y)
   }
 
   // Update parameters by optimizer
-  optimizer.update(&model.allDifferentiableVariables, along: grads)
+  optimizer.update(&model.self, along: grads)
 }
 
 let logits = model(testImages)
