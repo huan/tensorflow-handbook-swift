@@ -6,7 +6,7 @@
 
 This repository is the [Swift Chapter](https://tf.wiki/zh/appendix/swift.html) for [简单粗暴TensorFlow | A Concise Handbook of TensorFlow](https://tf.wiki)
 
-MNIST Example in Book: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/swift-for-tensorflow-mnist-example.ipynb)
+MNIST Example in Book: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huan/tensorflow-handbook-swift/blob/master/tensorflow-handbook-swift-example.ipynb)
 
 Book Chapter: Tensorflow Handbook - Swift
 
