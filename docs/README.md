@@ -20,7 +20,7 @@ Swift 语言是 Chris Lattner 在苹果公司工作时创建的。 现在 Chris 
 
 相对于 Tensorflow 的其他版本（如 Python，C++ 等），S4TF 拥有其独有的优势，比如：
 
-1. 开发效率高：强类型语言，能够静态检查 Tensor 维度是否匹配
+1. 开发效率高：强类型语言，能够静态检查变量类型
 1. 迁移成本低：与 Python，C，C++ 能够无缝结合
 1. 执行性能高：能够直接编译为底层硬件代码
 1. 专门为机器学习打造：语言原生支持自动微分系统
@@ -29,7 +29,7 @@ Swift 语言是 Chris Lattner 在苹果公司工作时创建的。 现在 Chris 
 
 更多使用 Swift 的理由，有兴趣的读者可以参考官方文档：[Why Swift for Tensorflow](https://github.com/tensorflow/swift/blob/master/docs/WhySwiftForTensorFlow.md)
 
-## 在 Colaboratory 中使用 Swift for Tensorflow
+## 在 Colaboratory 中快速体验 Swift for Tensorflow
 
 Google 的 Colaboratory 可以直接支持 Swift 语言的运行环境。可以通过下面的链接，直接打开一个 Swift 运行环境的 Colab Notebook ，这是一个最方便立即可以体验 Swift for Tensorflow 的方法。
 
@@ -58,12 +58,16 @@ Blank Swift on Colab: <https://colab.research.google.com/github/tensorflow/swift
 
 Swift 是动态强类型语言，也就是说 Swift 支持通过编译器自动检测类型，同时要求变量的使用要严格符合定义，所有变量都必须先定义后使用。
 
-下面的代码，因为最初声明的 `n` 是整数类型（42），所以如果将 `'string'` 赋值给 `n` 时，会出现类型不匹配的问题，所以 Swift 将会报错：“Cannot assign value of type 'String' to type 'Int'”。
+下面的代码，因为最初声明的 `n` 是整数类型（42），所以如果将 `'string'` 赋值给 `n` 时，会出现类型不匹配的问题，所以 Swift 将会报错：
 
 ```swift
 var n = 42
-n = 'string'
+n = "string"
 ```
+
+报错输出：
+
+> Cannot assign value of type 'String' to type 'Int'
 
 下面是一个基础使用 Tensorflow 计算的例子：
 
@@ -122,8 +126,12 @@ import Python
 let np = Python.import("numpy")
 let x = np.array([[1, 2], [3, 4]])
 let y = np.array([11, 12])
-print(x.dot(y)) // [35 81]
+print(x.dot(y))
 ```
+
+输出：
+
+> [35 81]
 
 除了能够直接调用 Python 之外，Swift 也快成直接调用系统函数库。比如下面的代码例子展示了我们可以在 Swift 中直接加载 Glibc 的动态库，然后调用系统底层的 malloc 和 memcpy 函数，对变量直接进行操作。
 
@@ -136,21 +144,6 @@ free(x)
 
 通过 Swift 强大的集成能力，针对 C/C++ 语言库的加载和调用，处理起来也将会是非常简单高效。
 
-## 静态 Tensor 尺寸不匹配错误检测
-
-> A system that diagnoses more errors earlier (e.g. shape mismatches at compile time) is more usable than one that only catches them at run time.
-> <https://github.com/tensorflow/swift/blob/master/docs/WhySwiftForTensorFlow.md>
-
----
-
-> Shape Checking: Shape errors are an ongoing problem for machine learning research and productivity. We already have some basic shape checks from the TensorFlow graph building APIs, but we need to invest in first class support for this to produce better diagnostics and diagnose more errors at high level API boundaries instead of inside the implementation of those APIs. We have initial ideas of how this could work, but need to explore this much further.
-> Named Dimensions: A frequently requested feature is to be able to use symbolic dimension names in Tensors. There are several different possible models that could be explored here.
->
-> -- <https://github.com/tensorflow/swift/blob/master/docs/DesignOverview.md>
-
-使用Swift for TF，妈妈再也不用担心你TM写了三个小时代码，结果发现Tensor的维度不对，尺度不对，大小不对等问题！！
-不过最牛逼最骚的一点事：swift可以在你的写代码的时候直接检测出你的tensor维度错误！！
-
 ## 语言原生支持自动微分
 
 我们可以通过 `@differentiable` 参数，非常容易的定义一个可被微分的函数。
@@ -162,9 +155,11 @@ func frac(_ x:Double) -> Double {
 }
 
 gradient(at:0.5) { x in frac(x) }
-
-// Output: -4.0
 ```
+
+输出：
+
+> -4.0
 
 ## MNIST 数字分类
 
