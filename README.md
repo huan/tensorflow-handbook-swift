@@ -1,4 +1,4 @@
-# Tensorflow in Swift
+# TensorFlow in Swift
 
 [![Build Status](https://travis-ci.com/huan/tensorflow-handbook-swift.svg?branch=master)](https://travis-ci.com/huan/tensorflow-handbook-swift)
 
